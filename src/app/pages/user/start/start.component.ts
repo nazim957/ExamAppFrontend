@@ -39,7 +39,7 @@ export class StartComponent implements OnInit {
       (data:any)=>{
         this.questions=data;
 
-        this.timer=this.questions.length*2*60;
+        this.timer=this.questions.length*2*60;   //by default every question is of 2 minutes
 
         // this.questions.forEach((q:any)=>{
         //   q['givenAnswer']='';
