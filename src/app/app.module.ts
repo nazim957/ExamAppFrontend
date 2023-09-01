@@ -42,6 +42,7 @@ import { StartComponent } from './pages/user/start/start.component'
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatDividerModule} from '@angular/material/divider';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 
 
 @NgModule({
@@ -88,6 +89,7 @@ import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
     MatSelectModule,
     MatDividerModule,
     LoadingBarRouterModule ,
+    LoadingBarHttpClientModule,
     //CKEditorModule,
     MatProgressSpinnerModule,
     // NgxUiLoaderModule,
