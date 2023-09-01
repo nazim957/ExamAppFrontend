@@ -41,6 +41,7 @@ import { InstructionsComponent } from './pages/user/instructions/instructions.co
 import { StartComponent } from './pages/user/start/start.component'
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatDividerModule} from '@angular/material/divider';
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 
 
 @NgModule({
@@ -86,6 +87,7 @@ import {MatDividerModule} from '@angular/material/divider';
     MatSlideToggleModule,
     MatSelectModule,
     MatDividerModule,
+    LoadingBarRouterModule ,
     //CKEditorModule,
     MatProgressSpinnerModule,
     // NgxUiLoaderModule,
