@@ -1,0 +1,48 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6 offset-md-3">
+                <mat-card>
+                <div class="container text-center">
+                    <img src="../../../assets/logo.jpg" width="150" height="150" alt="" />
+                </div>
+                <h1 class="text-center">Login Here!!</h1>
+                 <!-- {{loginData | json }}   -->
+                <form action="" (ngSubmit)="formSubmit()">
+                    <!--user name field-->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Email Address</mat-label>
+                        <input 
+                        [(ngModel)]="loginData.email"
+                        required 
+                        name="email"
+                        matInput placeholder="Enter Here">
+                        <mat-hint>Valid Email</mat-hint>
+                      </mat-form-field>
+                       <!--password field-->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input 
+                        [(ngModel)]="loginData.password"
+                        name="password"
+                        type="password" required 
+                        name="userName"
+                        matInput placeholder="Enter Here">
+                      </mat-form-field>
+                      <div class="container text-center">
+                        <button type="submit" mat-raised-button color="primary">Login</button>
+                        <button class="ml10" type="reset" mat-raised-button color="accent">Reset</button>
+                        </div>
+                        <div class="text-center">
+                        <p class="text-center my-3">Don't have an account? Sign up now!</p>
+                      <a routerLink="/signup" class="btn btn-secondary btn-sm btn">Sign Up</a>
+                      </div>
+                      </form>
+                      </mat-card>
+                </div>
+                </div>
+                </div>
+                </div>  
+            

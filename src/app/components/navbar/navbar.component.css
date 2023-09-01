@@ -1,0 +1,11 @@
+.example-spacer {
+    flex: 0.85 0.85 auto;
+  }
+
+  .spacer {
+    flex: 0.1 0.1 auto;
+  }
+
+  .aaa{
+    box-sizing: border-box;
+  }

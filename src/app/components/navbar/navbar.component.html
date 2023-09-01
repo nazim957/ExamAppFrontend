@@ -1,0 +1,39 @@
+<div class="bootstrap-wrapper">
+  
+<mat-toolbar color="primary">
+    <a 
+    routerLink="/"
+    mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu_book</mat-icon>
+    </a>
+    <span>Exam Portal</span>
+    <span class="example-spacer"></span>
+    <button class="example-spacer" 
+    *ngIf="!isLockedIn"
+    routerLink="/login"
+    mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <!-- <mat-icon>login</mat-icon> -->
+      Login
+    </button>
+    
+      <button 
+    *ngIf="isLockedIn"
+
+    mat-icon-button style="margin-right: 50px;" class="example-icon favorite-icon ml20" 
+    aria-label="Example icon-button with heart icon"  routerLink ="/admin/profile">
+    <mat-icon mat-list-icon>account_circle</mat-icon>
+       
+        {{login.getUser().firstName }}
+      </button>
+      <span class="spacer"></span>
+      <a 
+      (click)="logout()"
+    *ngIf="isLockedIn"
+
+    mat-icon-button class="example-icon favorite-icon ml20 mr20" aria-label="Example icon-button with heart icon">
+        <!-- <mat-icon>login</mat-icon> -->
+        Logout
+      </a>
+    
+  </mat-toolbar>
+  </div>
